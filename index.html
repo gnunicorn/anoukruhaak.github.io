@@ -2,22 +2,172 @@
 layout: default
 ---
 
-<div class="home">
+<!-- 
+<div class="container bg-darken-3 white">
+  <div class="clearfix mxn2 py2 m1">
+    <header>
+    </header>
+  </div>
+</div> -->
 
-  <h1 class="page-heading">Posts</h1>
+<section class="container px4 py3 elem-margin bg-white">
+  <div class="clearfix mxn2">
+   <div class="sm-col sm-col-6 px2">
+      <div class="sm-col sm-col-4 px2">
+        <img src="/image/profile-pic.jpg" class="circle"/>
+      </div>
+      <div class="sm-col sm-col-12">
+        <h1 id="name" class="h1 responsive-h1 caps" >Anouk Ruhaak</h1>
+          <span style="padding-right:1.5vw;"><a href="https://twitter.com/AnoukRuhaak"><i class="fa fa-twitter fa-lg"></i></a></span>
+          <span style="padding-right:1.5vw;"><a href="https://github.com/AnoukRuhaak"><i class="fa fa-github-alt fa-lg"></i></a></span>
+          <span style="padding-right:1.5vw;"><a href="mailto: hello at anoukruhaak dot com"><i class="fa fa-envelope fa-lg"></i></a></span>
+      </div>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="sm-col sm-col-6  bg-white box-margin">
+      <p>I build mobile apps for <strong>iOS</strong>, write <strong>open source plugins </strong>for <a href="https://github.com/discourse/discourse">Discourse</a> (Ruby on Rails) and would love a chance to use <strong>React.js</strong> for a client project (hint hint!). </p><p> When I'm not writing code for clients I'm probably busy exploring a range of  topics including <strong>functional programming</strong> in Haskell, cryptography and security.</p>
+      <p>Before I wrote code, I wrote words (lots of them) and <strong>analysed data</strong> on economic systems and international politics. </p>
+    </div>
+  </div>
+</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<!-- <div class="container">
+  <div class="clearfix mxn2 py0">
+    <hr class="mt0 mb0 m5 border-darken-2"></hr>
+  </div>
+</div> -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section class="container px4 py1 bg-white elem-margin">
+  <div class="clearfix mxn2">
+    <div class="sm-col sm-col-4 px2">
+      <h2 class="responsive-h2 caps mb1">Talks & Tutorials</h2>
+      <br />
+      <p>As an organiser and coach at <a href="http://hackership.org">Hackership</a> I help other developers further build their skills and discover new technologies.</p>
+      <ul class="list-reset">
+      <li><strong>Functional Programming With Python.</strong> Functional programming is getting loads of attention and with it comes a lot of confusion. This tutorial explains what it is all about and has you writing functional code in Python, in a matter of minutes. Also includes challenges.<a href="https://github.com/Hackership/func-starters"> Link.</a></li>
+      <br />
+      <li><strong>How to serve static pages with Dokku and Jekyll</strong> Nine step tutorial that takes you from zero to having your blog published.<a href="http://hackership.org"> Link.</a></li>
+      <br />
+      <li><strong>Interview.</strong> Short interview with me by the lovely people of OTSConf. <a href="http://blog.otsconf.com/post/124152024144/meet-the-speakers-anouk-ruhaak">Link.</a></li>
+      </ul>
+    </div>
+    <div class="sm-col sm-col-4 px2">
+       <h2 class="responsive-h2 caps mb1">Projects</h2>
+      <br />
+    <ul class="list-reset">
+    <li><strong>Discourse Plugins.</strong> <a href="http://www.discourse.org/">Discourse</a> is an open source discussion platform - written in <strong class="maroon">Ruby on Rails and Ember.js</strong>. It helps communities develop, by facilitating easy communication and sharing of ideas. I help my clients tailor this software to the needs of their individual communities, by building plugins. Also, I'm in the process of developing an open source plugin for a personal project, <a href="https://github.com/techtalksHQ">TechTalks.</a></li>
+    <br />
+    <li><strong>Anonymous Review App. </strong> A web app aimed to remove unwelcome biases from the Hackership <a href="http://blog.hackership.org/2015/04/Anonymous-Reviews.html">application review process</a> - written in <strong class="maroon">React.js and Flask</strong>. It allows an admin to anonymize student applications, after which reviewers can read, make comments, send e-mails and change the status of the application. Still very much in development. <a href="https://github.com/Hackership/reviewapp-backend">Github.</a></li>
+    <br />
+    <li><strong>Frestyl.</strong> An <strong class="maroon">iOS app</strong> to discover life music events, listen to music from events and participate in ticket lotteries. <a href="https://itunes.apple.com/us/app/frestyl/id359032852?mt=8">App Store.</a></li>
+    </ul>
+    </div>
+    <div class="sm-col sm-col-4 px2">
+       <h2 class="responsive-h2 caps mb1">Things I Write</h2>
+      <br />
+    <p>Sometimes I rant, sometimes I write. Here's a sample of things I've written online:</p>
+    <ul class="list-reset">
+    <li><strong>Why tech bashing is harmful. </strong> Berating someone's choice of technology can be incredibly demotivating for especially the beginning developer. Includes some tips for dealing with tech bashers. <a href="http://blog.hackership.org/2015/02/Technology-Bashing-Is-Harmful.html">Link.</a></li>
+     <br />
+    <li><strong>Stop Perpetuating An Outdated Education Model</strong>. A rant about education and code schools. <a href="http://blog.hackership.org/2015/02/outdated-model.html">Link.</a></li>
+    <br />
+    <li><strong>'Did I only get in because I'm a woman?'</strong> How we, Hackership, came to the decision to create an anonymous application review process and how we went about it.<a href="http://blog.hackership.org/2015/04/Anonymous-Reviews.html"> Link</a>.</li>
+    </ul>
+    </div>
+</section>
 
+<section class="container px4 py1 elem-margin bg-white">
+  <h1 class="mt1"> Gallery</h1>
+  <div class="clearfix mxn2">
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/image/frestyl1.png" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/image/frestyl2.png" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/image/frestyl3.png" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/image/weddee1.png" class="block" />
+      </a>
+    </div>
+    <div class="md-show lg-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/image/weddee2.png"  class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="/image/weddee3.png"  class="block" />
+      </a>
+    </div>
+<!--     <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+      </a>
+    </div>
+    <div class="md-show lg-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+      </a>
+    </div>
+    <div class="sm-show md-hide clearfix"></div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+      </a>
+    </div>
+    <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+      <a href="#" class="block">
+        <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+      </a>
+    </div> -->
+  </div>
+</section>
+
+
+<div class="container px4 py1 navy">
+  <div class="clearfix mxn2 m1">
+    <footer>
+    <div class="sm-col sm-col-12 center">
+      <p> Copyright July 2015 - Anouk Ruhaak</p>
+      </div>
+    </footer>
+  </div>
 </div>
+
+<script type="text/javascript">
+  var colors = ["#7fdbff", "#0074d9", "#001f3f", "#39cccc", "#2ecc40", "#3d9970", "#01ff70", "#ffdc00", "#ff851b", "#ff4136", "#f012be", "#b10dc9", "#85144b"];
+  function random_color(){
+    var element = document.getElementById("name");
+    var wrapper = document.getElementById("wrapper");
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    element.style.color = color;
+    wrapper.style["background-color"] = color;
+  }
+  window.addEventListener("load", random_color);
+  window.setInterval(random_color, 7000);
+
+</script>
